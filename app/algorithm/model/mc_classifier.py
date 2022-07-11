@@ -13,7 +13,6 @@ from sklearn.ensemble import RandomForestClassifier
 model_fname = "model.save"
 MODEL_NAME = "mc_random_forest_sklearn"
 
-COST_THRESHOLD = float('inf')
 
 
 class Classifier(): 

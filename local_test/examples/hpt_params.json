@@ -29,7 +29,14 @@
     "range_low": 1,
     "range_high": 20,
     "run_HPO": true
+  },
+
+  {
+    "name": "max_features",
+    "short_desc": "The number of features to consider when looking for the best split.",
+    "default": "auto",
+    "type": "categorical",
+    "categorical_vals": ["auto", "sqrt", "log2"],
+    "run_HPO": false
   }
-
-
 ]
