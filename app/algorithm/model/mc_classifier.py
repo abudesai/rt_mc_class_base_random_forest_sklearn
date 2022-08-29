@@ -26,7 +26,12 @@ class Classifier():
         
         
     def build_model(self): 
-        model = RandomForestClassifier(n_estimators = self.n_estimators, min_samples_split = self.min_samples_split, min_samples_leaf = self.min_samples_leaf)
+        model = RandomForestClassifier(
+            n_estimators = self.n_estimators, 
+            max_depth = self.max_depth, 
+            min_samples_split = self.min_samples_split, 
+            min_samples_leaf = self.min_samples_leaf
+            )
         return model
     
     
