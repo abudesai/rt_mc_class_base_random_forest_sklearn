@@ -1,4 +1,4 @@
-Random Forest Classifier in SciKitLearn for Multi-class Classification - Base problem category as per Ready Tensor specifications.
+Random Forest Classifier in SciKitLearn with Shapley explanations for Multi-class Classification - Base problem category as per Ready Tensor specifications.
 
 - random forest
 - ensemble
@@ -13,7 +13,7 @@ Random Forest Classifier in SciKitLearn for Multi-class Classification - Base pr
 - uvicorn
 - docker
 
-This is a Multi-class Classifier that uses a Random Forest implementation through SciKitLearn.
+This is a Multi-class Classifier that uses a Random Forest implementation through SciKitLearn. Feature impacts are provided with Shapley values for model interpretability.
 
 The classifier starts by creating an ensemble of decision trees and assigns the sample to the class that is predicted by the majority of the decision trees.
 
@@ -23,4 +23,4 @@ Hyperparameter Tuning (HPT) is conducted by finding the optimal number of decisi
 
 During the model development process, the algorithm was trained and evaluated on a variety of publicly available datasets such as email primary-tumor, splice, stalog, steel plate fault, wine, and car.
 
-This Multi-class Classifier is written using Python as its programming language. Scikitlearn is used to implement the main algorithm, create the data preprocessing pipeline, and evaluate the model. Numpy, pandas, and feature_engine are used for the data preprocessing steps. SciKit-Optimize was used to handle the HPT. Flask + Nginx + gunicorn are used to provide web service which includes two endpoints- /ping for health check and /infer for predictions in real time.
+This Multi-class Classifier is written using Python as its programming language. Scikitlearn is used to implement the main algorithm, create the data preprocessing pipeline, and evaluate the model. Numpy, pandas, and feature_engine are used for the data preprocessing steps. SciKit-Optimize was used to handle the HPT. Flask + Nginx + gunicorn are used to provide web service which includes three endpoints- /ping for health check, /infer for predictions in real time and /explain to generate local explanations.

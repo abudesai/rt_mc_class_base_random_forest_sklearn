@@ -19,7 +19,6 @@
     "range_high": 10,
     "run_HPO": true
   },
-
   {
     "name": "min_samples_leaf",
     "short_desc": "The minimum number of samples required to be at a leaf node.",

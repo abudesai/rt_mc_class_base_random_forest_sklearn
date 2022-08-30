@@ -376,12 +376,12 @@ class XYSplitter(BaseEstimator, TransformerMixin):
     
     def transform(self, data): 
         if self.target_col in data.columns: 
-            y = data[self.target_col].values
+            y = data[self.target_col]
         else: 
             y = None
         
         not_X_cols = [ self.id_col, self.target_col ] 
         X_cols = [ col for col in data.columns if col not in not_X_cols ]        
-        X = data[X_cols].values   
+        X = data[X_cols]   
         ids = data[self.id_col].values        
         return { 'X': X, 'y': y, "ids":ids  }
