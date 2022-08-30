@@ -3,6 +3,7 @@ Random Forest Classifier in SciKitLearn with Shapley explanations for Multi-clas
 - random forest
 - ensemble
 - multi-class classification
+- XAI
 - sklearn
 - python
 - pandas
