@@ -21,7 +21,7 @@ class ModelServer:
         self.model = None
         self.id_field_name = self.data_schema["inputDatasets"]["multiClassClassificationBaseMainInput"]["idField"]  
         self.has_local_explanations = True
-        self.MAX_LOCAL_EXPLANATIONS = 5
+        self.MAX_LOCAL_EXPLANATIONS = 1
     
     
     def _get_preprocessor(self): 
